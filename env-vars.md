@@ -4,7 +4,8 @@
 | ---------------- | -------------- | --------------------------------------------------------------- |
 | THREADS          | number         | Number of threads to run Solarcord on when using bundle.         |
 | PORT             | number         | Port to listen on                                               |
-| DATABASE         | string         | Database connection string. Defaults to SQlite3 at project root |
+| DATABASE         | string         | Database connection string. Defaults to SQLite3 at project root |
+| DATABASE_URL     | string         | PostgreSQL-style fallback used when DATABASE is not set          |
 | CONFIG_PATH      | string         | File path for JSON config, if not using `config` db table       |
 | WS_LOGEVENTS     | boolean        | If set, log websocket events from gateway                       |
 | CDN              | string         | Lowest priority value for public CDN annoucements               |
