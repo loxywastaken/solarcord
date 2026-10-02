@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Solarcord Admin</title>
+  <link rel="icon" href="/assets/solarcord-logo.png" />
+  <link rel="stylesheet" href="/assets/solarcord-admin.css" />
+  <link rel="stylesheet" href="/assets/solarcord-themes.css?v=5" />
+  <script defer src="/assets/solarcord-themes.js?v=4"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="server-rail" aria-label="Solarcord navigation">
+      <a class="server-icon home" href="/" title="Solarcord">
+        <img src="/assets/solarcord-logo.png" alt="Solarcord" />
+      </a>
+      <div class="rail-divider"></div>
+      <a class="server-icon selected" href="/admin" title="Admin panel" aria-current="page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4.5 5.2v5.4c0 5 3.1 9.6 7.5 11.4 4.4-1.8 7.5-6.4 7.5-11.4V5.2L12 2Zm0 4.1a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 12.3c-2 0-3.8-.9-5-2.3.1-2 3.3-3.1 5-3.1s4.9 1.1 5 3.1a6.7 6.7 0 0 1-5 2.3Z"/></svg>
+      </a>
+      <button class="server-icon add" type="button" title="Admin tools">+</button>
+    </aside>
+
+    <aside class="sidebar">
+      <div class="server-header">
+        <span>Solarcord</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5Z"/></svg>
+      </div>
+      <nav class="channel-list" aria-label="Admin sections">
+        <div class="channel-category">INSTANCE ADMIN</div>
+        <a class="channel active" href="#overview">
+          <svg viewBox="0 0 24 24"><path d="M4 13h6V4H4v9Zm0 7h6v-5H4v5Zm10 0h6v-9h-6v9Zm0-16v5h6V4h-6Z"/></svg>
+          Overview
+        </a>
+        <a class="channel" href="#users-panel">
+          <svg viewBox="0 0 24 24"><path d="M16 11c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3ZM8 11c1.7 0 3-1.3 3-3S9.7 5 8 5 5 6.3 5 8s1.3 3 3 3Zm0 2c-2.3 0-7 1.2-7 3.5V19h14v-2.5C15 14.2 10.3 13 8 13Zm8 0c-.3 0-.7 0-1.1.1 1.2.9 2.1 2 2.1 3.4V19h6v-2.5c0-2.3-4.7-3.5-7-3.5Z"/></svg>
+          User Management
+        </a>
+        <a class="channel" href="#servers-panel">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 10h16a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2Zm2-7v2h2V7H6Zm0 9v2h2v-2H6Z"/></svg>
+          Servers
+        </a>
+        <a class="channel" href="#boosts-panel">
+          <svg viewBox="0 0 24 24"><path d="m13 2-1 7h6l-8 13 1-8H5l8-12Z"/></svg>
+          Server Boosting
+        </a>
+        <a class="channel" href="#moderation-panel">
+          <svg viewBox="0 0 24 24"><path d="M12 2 4.5 5.2v5.4c0 5 3.1 9.6 7.5 11.4 4.4-1.8 7.5-6.4 7.5-11.4V5.2L12 2Zm-1 14-3-3 1.4-1.4L11 13.2l3.6-3.6L16 11l-5 5Z"/></svg>
+          Moderation
+        </a>
+        <a class="channel" href="#clyde-panel">
+          <svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8v3a3 3 0 0 0 3 3h1v-6H6a6 6 0 1 1 12 0h-2v6h2v1a2 2 0 0 1-2 2h-3v2h3a4 4 0 0 0 4-4v-1a3 3 0 0 0 2-3v-3a8 8 0 0 0-8-8Z"/></svg>
+          Clyde
+        </a>
+        <a class="channel" href="#appearance-panel">
+          <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18h1.5a1.5 1.5 0 0 0 0-3H12a2 2 0 0 1 0-4h3a6 6 0 0 0 0-12h-3Zm-4.5 6A1.5 1.5 0 1 1 9 7.5 1.5 1.5 0 0 1 7.5 9Zm4-3A1.5 1.5 0 1 1 13 4.5 1.5 1.5 0 0 1 11.5 6Zm5 3A1.5 1.5 0 1 1 18 7.5 1.5 1.5 0 0 1 16.5 9Z"/></svg>
+          Appearance
+        </a>
+        <a class="channel" href="/">
+          <svg viewBox="0 0 24 24"><path d="m10 17 5-5-5-5v10Z"/></svg>
+          Back to Solarcord
+        </a>
+      </nav>
+      <div class="user-panel">
+        <div class="avatar">ZX</div>
+        <div class="user-copy">
+          <strong id="identity">zxme</strong>
+          <span>Owner</span>
+        </div>
+        <a href="/" class="panel-icon" title="Close admin">
+          <svg viewBox="0 0 24 24"><path d="M18.3 5.7 12 12l6.3 6.3-1.4 1.4-6.3-6.3-6.3 6.3-1.4-1.4L9.2 12 2.9 5.7l1.4-1.4 6.3 6.3 6.3-6.3 1.4 1.4Z"/></svg>
+        </a>
+      </div>
+    </aside>
+
+    <section class="content-shell">
+      <header class="topbar">
+        <div class="topbar-title"><span class="hash">#</span> admin-overview</div>
+        <div class="topbar-actions">
+          <span class="status-dot"></span>
+          <span>Server online</span>
+          <a href="/" title="Open Solarcord">
+            <svg viewBox="0 0 24 24"><path d="M10 6 8.6 7.4l3.6 3.6H3v2h9.2l-3.6 3.6L10 18l6-6-6-6Zm8-3H6a2 2 0 0 0-2 2v4h2V5h12v14H6v-4H4v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z"/></svg>
+          </a>
+        </div>
+      </header>
+
+      <main class="content">
+        <section id="overview" class="welcome-block">
+          <div class="welcome-icon"><img src="/assets/solarcord-logo.png" alt="" /></div>
+          <div>
+            <p class="kicker">SOLARCORD INSTANCE</p>
+            <h1>Admin Overview</h1>
+            <p id="instance-description">Loading your Solarcord instance…</p>
+          </div>
+          <span class="owner-badge">OWNER</span>
+        </section>
+
+        <section id="notice" class="notice hidden"></section>
+
+        <section class="stats" aria-label="Instance statistics">
+          <article><span>MEMBERS</span><strong id="stat-users">—</strong><small>Total accounts</small></article>
+          <article><span>SERVERS</span><strong id="stat-guilds">—</strong><small>Active servers</small></article>
+          <article><span>CHANNELS</span><strong id="stat-channels">—</strong><small>Across Solarcord</small></article>
+          <article><span>MESSAGES</span><strong id="stat-messages">—</strong><small>Messages sent</small></article>
+          <article><span>BOOSTS</span><strong id="stat-boosts">—</strong><small>Active server boosts</small></article>
+        </section>
+
+        <section id="users-panel" class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="kicker">MEMBER SAFETY</p>
+              <h2>User Management</h2>
+              <p>Review accounts, suspend access, or terminate accounts with immediate session revocation.</p>
+            </div>
+            <div class="search-wrap">
+              <input id="search" type="search" placeholder="Search" autocomplete="off" />
+              <svg viewBox="0 0 24 24"><path d="m21 19-5.2-5.2a7 7 0 1 0-2 2L19 21l2-2ZM5 10a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"/></svg>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>User</th><th>Email</th><th>Status</th><th>Joined</th><th>Actions</th></tr></thead>
+              <tbody id="users"><tr><td colspan="5" class="loading">Loading users…</td></tr></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="servers-panel" class="panel spaced-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="kicker">SERVER PROGRAMMES</p>
+              <h2>Servers</h2>
+              <p>Manage programmes, Community features, boost status, and server identity.</p>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Server</th><th>Owner</th><th>Members</th><th>Boosts</th><th>Badges</th><th>Actions</th></tr></thead>
+              <tbody id="servers"><tr><td colspan="6" class="loading">Loading servers&hellip;</td></tr></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="boosts-panel" class="panel spaced-panel boost-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="kicker">SERVER BOOSTING</p>
+              <h2>Boost Levels</h2>
+              <p>Manage Discord-compatible Tier 1, Tier 2, and Tier 3 thresholds with live progress.</p>
+            </div>
+            <label class="select-wrap">Server
+              <select id="boost-server"><option value="">Select a server</option></select>
+            </label>
+          </div>
+          <div id="boost-dashboard" class="boost-dashboard loading">Choose a server to manage its boost level.</div>
+        </section>
+
+        <section id="moderation-panel" class="panel spaced-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="kicker">TRUST &amp; SAFETY</p>
+              <h2>Server Moderation</h2>
+              <p>Review members, apply timeouts, remove members, and manage bans.</p>
+            </div>
+            <label class="select-wrap">Server
+              <select id="moderation-server"><option value="">Select a server</option></select>
+            </label>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Member</th><th>Status</th><th>Joined</th><th>Boosting</th><th>Actions</th></tr></thead>
+              <tbody id="moderation-members"><tr><td colspan="5" class="loading">Choose a server to manage its members.</td></tr></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="clyde-panel" class="panel spaced-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="kicker">BUILT-IN ASSISTANT</p>
+              <h2>Clyde</h2>
+              <p>Verified helper status, commands, and automatic server membership.</p>
+            </div>
+            <button id="repair-clyde" type="button">Repair &amp; Resync Clyde</button>
+          </div>
+          <div id="clyde-status" class="clyde-status loading">Checking Clyde&hellip;</div>
+        </section>
+
+        <section id="appearance-panel" class="panel spaced-panel appearance-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="kicker">PERSONALISATION</p>
+              <h2>Gradient Themes</h2>
+              <p>Choose a Discord-style gradient theme. It applies to the client and admin panel and is saved on this device.</p>
+            </div>
+          </div>
+          <div class="theme-picker-wrap" data-theme-picker></div>
+        </section>
+      </main>
+    </section>
+  </div>
+
+  <script src="/assets/solarcord-admin.js"></script>
+</body>
+</html>

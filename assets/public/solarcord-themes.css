@@ -1,0 +1,139 @@
+:root,
+:root[data-solarcord-theme="midnight"] {
+  --sc-brand: #5865f2;
+  --sc-brand-hover: #4752c4;
+  --sc-surface-0: #111214;
+  --sc-surface-1: #1e1f22;
+  --sc-surface-2: #2b2d31;
+  --sc-surface-3: #313338;
+  --sc-panel: rgba(43, 45, 49, .96);
+  --sc-gradient: linear-gradient(145deg, #111214 0%, #23253a 54%, #313338 100%);
+  --sc-glow: rgba(88, 101, 242, .22);
+}
+
+:root[data-solarcord-theme="aurora"] {
+  --sc-brand: #8b78ff;
+  --sc-brand-hover: #755fe7;
+  --sc-surface-0: #09191f;
+  --sc-surface-1: #10252c;
+  --sc-surface-2: #18323a;
+  --sc-surface-3: #203c46;
+  --sc-panel: rgba(16, 37, 44, .9);
+  --sc-gradient: radial-gradient(circle at 14% 12%, rgba(48, 213, 200, .34), transparent 34%), radial-gradient(circle at 88% 5%, rgba(139, 120, 255, .46), transparent 42%), linear-gradient(145deg, #07171d, #18313b 52%, #312458);
+  --sc-glow: rgba(76, 224, 195, .25);
+}
+
+:root[data-solarcord-theme="sunset"] {
+  --sc-brand: #ff8066;
+  --sc-brand-hover: #e46672;
+  --sc-surface-0: #211321;
+  --sc-surface-1: #302035;
+  --sc-surface-2: #422942;
+  --sc-surface-3: #513249;
+  --sc-panel: rgba(48, 32, 53, .9);
+  --sc-gradient: radial-gradient(circle at 85% 10%, rgba(255, 166, 89, .4), transparent 36%), radial-gradient(circle at 12% 75%, rgba(126, 63, 152, .55), transparent 42%), linear-gradient(145deg, #26152b, #6d335e 58%, #d75e61);
+  --sc-glow: rgba(255, 128, 102, .28);
+}
+
+:root[data-solarcord-theme="cotton"] {
+  --sc-brand: #a490ff;
+  --sc-brand-hover: #8d78e8;
+  --sc-surface-0: #221d38;
+  --sc-surface-1: #302a4c;
+  --sc-surface-2: #44375d;
+  --sc-surface-3: #51436a;
+  --sc-panel: rgba(48, 42, 76, .9);
+  --sc-gradient: radial-gradient(circle at 15% 8%, rgba(116, 154, 255, .52), transparent 38%), radial-gradient(circle at 88% 80%, rgba(244, 128, 207, .42), transparent 42%), linear-gradient(145deg, #25203f, #5759a6 54%, #9c527f);
+  --sc-glow: rgba(214, 143, 255, .3);
+}
+
+:root[data-solarcord-theme="galaxy"] {
+  --sc-brand: #776bff;
+  --sc-brand-hover: #6256df;
+  --sc-surface-0: #090713;
+  --sc-surface-1: #141126;
+  --sc-surface-2: #201a38;
+  --sc-surface-3: #2b2448;
+  --sc-panel: rgba(20, 17, 38, .92);
+  --sc-gradient: radial-gradient(circle at 22% 18%, rgba(77, 99, 255, .42), transparent 31%), radial-gradient(circle at 76% 65%, rgba(173, 75, 255, .28), transparent 35%), linear-gradient(150deg, #080611, #181432 58%, #312055);
+  --sc-glow: rgba(119, 107, 255, .32);
+}
+
+:root[data-solarcord-theme="mint"] {
+  --sc-brand: #4ec7a7;
+  --sc-brand-hover: #3ca98e;
+  --sc-surface-0: #0b1d1c;
+  --sc-surface-1: #132a28;
+  --sc-surface-2: #1d3835;
+  --sc-surface-3: #294641;
+  --sc-panel: rgba(19, 42, 40, .9);
+  --sc-gradient: radial-gradient(circle at 82% 12%, rgba(91, 214, 170, .32), transparent 37%), radial-gradient(circle at 8% 80%, rgba(47, 126, 138, .35), transparent 38%), linear-gradient(145deg, #0a1c1b, #183c37 54%, #315e53);
+  --sc-glow: rgba(78, 199, 167, .25);
+}
+
+:root[data-solarcord-theme] {
+  --brand: var(--sc-brand);
+  --brand-hover: var(--sc-brand-hover);
+  --bg-primary: var(--sc-surface-3);
+  --bg-secondary: var(--sc-surface-2);
+  --bg-tertiary: var(--sc-surface-1);
+  --bg-floating: var(--sc-surface-0);
+  --background-primary: var(--sc-surface-3);
+  --background-secondary: var(--sc-surface-2);
+  --background-secondary-alt: var(--sc-surface-1);
+  --background-tertiary: var(--sc-surface-1);
+  --background-floating: var(--sc-surface-0);
+  --background-accent: var(--sc-brand);
+  --brand-experiment: var(--sc-brand);
+  --brand-experiment-560: var(--sc-brand-hover);
+}
+
+html[data-solarcord-theme] body { background: var(--sc-gradient) fixed !important; }
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) #app-mount > svg { display: none !important; }
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) .characterBackground-1BPOOJ > svg { display: none !important; }
+html[data-solarcord-theme] .discordLogo-2A4X97 { display: none !important; }
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) .app-3xd6d0,
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) .characterBackground-1BPOOJ,
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) .wrapper-1f5byN { background: transparent !important; }
+html[data-solarcord-theme] form.authBox-1HR6Ha {
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--sc-surface-3) 88%, transparent) !important;
+  box-shadow: 0 24px 70px rgba(0,0,0,.38), 0 0 40px var(--sc-glow);
+  backdrop-filter: blur(20px);
+}
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) #app-mount,
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) .app-1q1i1E,
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) .layers-3iHuyZ,
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) .layer-3QrUeG { background: transparent !important; }
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) .sidebar-2K8pFh,
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) .container-3w7J-x,
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) .members-1998pB,
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) .membersWrap-2h-GB4 { background: color-mix(in srgb, var(--sc-surface-2) 88%, transparent) !important; }
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) .chat-3bRxxu,
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) .content-yTz4x3,
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) .chatContent-a9vAAp,
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) .scroller-2LSbBU,
+html[data-solarcord-theme]:not([data-solarcord-theme="midnight"]) .container-1r6BKw { background: color-mix(in srgb, var(--sc-surface-3) 84%, transparent) !important; }
+
+#solarcord-theme-launcher {
+  position: fixed; right: 18px; bottom: 18px; z-index: 10001; width: 42px; height: 42px; padding: 0; border: 1px solid rgba(255,255,255,.18); border-radius: 14px; color: white; background: var(--sc-brand); box-shadow: 0 12px 32px rgba(0,0,0,.38), 0 0 24px var(--sc-glow); font-size: 18px; cursor: pointer;
+}
+#solarcord-auth-brand {
+  position: fixed; left: 22px; top: 20px; z-index: 10001; display: flex; align-items: center; gap: 10px; color: white; text-decoration: none; text-shadow: 0 2px 10px rgba(0,0,0,.35); font: 800 20px/1 "gg sans", "Helvetica Neue", sans-serif;
+}
+#solarcord-auth-brand img { width: 42px; height: 42px; border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,.26); }
+#solarcord-theme-popover {
+  position: fixed; right: 18px; bottom: 70px; z-index: 10001; width: 260px; padding: 14px; border: 1px solid rgba(255,255,255,.12); border-radius: 14px; color: #f2f3f5; background: color-mix(in srgb, var(--sc-surface-1) 94%, transparent); box-shadow: 0 18px 48px rgba(0,0,0,.48); backdrop-filter: blur(18px);
+}
+#solarcord-theme-popover[hidden] { display: none; }
+#solarcord-theme-popover > strong { display: block; margin: 0 0 10px; font: 700 14px/1.2 "gg sans", "Helvetica Neue", sans-serif; }
+.sc-theme-popover-grid, [data-theme-picker] { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.sc-theme-card { min-height: 76px; display: flex; flex-direction: column; gap: 7px; padding: 8px; margin: 0; border: 1px solid transparent; border-radius: 10px; color: #dbdee1; background: rgba(0,0,0,.2); cursor: pointer; font: 600 12px/1.2 "gg sans", "Helvetica Neue", sans-serif; text-align: left; }
+.sc-theme-card:hover { background: rgba(255,255,255,.08); }
+.sc-theme-card.selected { border-color: var(--sc-brand); box-shadow: 0 0 0 2px var(--sc-glow); }
+.sc-theme-card.compact { min-height: 55px; padding: 6px; font-size: 10px; }
+.sc-theme-swatch { display: block; width: 100%; height: 36px; border-radius: 7px; background: linear-gradient(135deg, var(--swatch-a), var(--swatch-b)); box-shadow: inset 0 0 0 1px rgba(255,255,255,.12); }
+.sc-theme-card.compact .sc-theme-swatch { height: 24px; }
+.sc-theme-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 600px) { [data-theme-picker] { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

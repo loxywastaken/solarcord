@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 144" role="img" aria-labelledby="title">
+  <title id="title">Solarcord</title>
+  <defs>
+    <linearGradient id="solar" x1="10" y1="10" x2="490" y2="134" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD166"/>
+      <stop offset="0.42" stop-color="#FF8A3D"/>
+      <stop offset="1" stop-color="#7B5CFA"/>
+    </linearGradient>
+  </defs>
+  <circle cx="66" cy="66" r="30" fill="url(#solar)"/>
+  <g stroke="url(#solar)" stroke-width="8" stroke-linecap="round">
+    <path d="M66 18V6M66 126v-12M18 66H6M126 66h-12M32 32l-9-9M109 109l-9-9M100 32l9-9M23 109l9-9"/>
+  </g>
+  <text x="146" y="92" fill="url(#solar)" font-family="Inter, Segoe UI, sans-serif" font-size="66" font-weight="750" letter-spacing="-2">Solarcord</text>
+</svg>
