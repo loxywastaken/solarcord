@@ -15,7 +15,7 @@ if (!process.env) {
 }
 
 let dbConnectionString =
-	process.env.DATABASE || path.join(process.cwd(), "database.db");
+	process.env.DATABASE || process.env.DATABASE_URL || path.join(process.cwd(), "database.db");
 
 const DatabaseType = dbConnectionString.includes("://")
 	? dbConnectionString.split(":")[0]?.replace("+srv", "")
