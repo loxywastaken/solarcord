@@ -19,7 +19,7 @@ if (process.env.STORAGE_PROVIDER === "file" || !process.env.STORAGE_PROVIDER) {
 	if (location) {
 		location = path.resolve(location);
 	} else {
-		location = path.join(process.cwd(), "files");
+		location = process.env.VERCEL ? path.join("/tmp", "solarcord-files") : path.join(process.cwd(), "files");
 	}
 	// TODO: move this to some start func, so it doesn't run when server is imported
 	//console.log(`[CDN] storage location: ${bgCyan(`${black(location)}`)}`);
