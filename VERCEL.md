@@ -1,6 +1,8 @@
 # Vercel deployment notes
 
-This branch adds a Vercel entrypoint for Solarcord.
+This repository includes a Vercel entrypoint for Solarcord.
+
+Deployment configuration is tracked on the `main` branch.
 
 Required production environment variables:
 
