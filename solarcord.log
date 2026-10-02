@@ -1,0 +1,31 @@
+
+███████╗ ██████╗ ██╗      █████╗ ██████╗  ██████╗ ██████╗ ██████╗
+██╔════╝██╔═══██╗██║     ██╔══██╗██╔══██╗██╔════╝██╔═══██╗██╔══██╗
+███████╗██║   ██║██║     ███████║██████╔╝██║     ██║   ██║██████╔╝
+╚════██║██║   ██║██║     ██╔══██║██╔══██╗██║     ██║   ██║██╔══██╗
+███████║╚██████╔╝███████╗██║  ██║██║  ██║╚██████╗╚██████╔╝██║  ██║
+╚══════╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝
+
+		solarcord-server | Pre-release (Unknown (Git cannot be found))
+
+Commit Hash: Unknown (Git cannot be found)
+Cores: 12 (Using 1 thread(s).)
+
+Warning: Git metadata is unavailable.
+[Path] running in D:\solarcord dih\dist\bundle
+[CPU] Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz Cores x12
+[System] win32 x64
+[Process] running with PID: 18084
+[Process] starting with 1 threads
+Missing @yukikaze-bot/erlpack, electron-based desktop clients designed for discord.com will not be able to connect!
+[Database] You are running sqlite! Please keep in mind that we recommend setting up a dedicated database!
+[Database] connecting to sqlite db
+[Database] connected
+[Config] Loading configuration...
+Got Resume -> cancel not implemented
+[Server] listening on port 3001
+[WebSocket] closed 1001 
+[WebSocket] closed 1001 
+[WebSocket] closed 1001 
+[WebSocket] closed 1001 
+[WebSocket] closed 1001 
